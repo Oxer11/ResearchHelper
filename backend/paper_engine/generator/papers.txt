@@ -1,0 +1,130 @@
+6197
+Distributionally Robust Policy Evaluation and Learning in Offline Contextual Bandits
+Nian Si , Fan Zhang , Zhengyuan Zhou , Jose Blanchet
+Policy learning using historical observational data is an important problem that has found widespread applications. However, existing literature rests on the crucial assumption that the future environment where the learned policy will be deployed is the same as the past environment that has generated the data–an assumption that is often false or too coarse an approximation. In this paper, we lift this assumption and aim to learn a distributionally robust policy with bandit observational data. We propose a novel learning algorithm that is able to learn a robust policy to adversarial perturbations and unknown covariate shifts. We first present a policy evaluation procedure in the ambiguous environment and also give a heuristic algorithm to solve the distributionally robust policy learning problems efficiently. Additionally, we provide extensive simulations to demonstrate the robustness of our policy.
+
+
+6337
+Q-value Path Decomposition for Deep Multiagent Reinforcement Learning
+Yaodong Yang , Jianye Hao , Guangyong Chen , Hongyao Tang , Yingfeng Chen , Yujing Hu , Changjie Fan , Zhongyu Wei
+Recently, deep multiagent reinforcement learning (MARL) has become a highly active research area as many real-world problems can be inherently viewed as multiagent systems. A particularly interesting and widely applicable class of problems is the partially observable cooperative multiagent setting, in which a team of agents learns to coordinate their behaviors conditioning on their private observations and commonly shared global reward signals. One natural solution is to resort to the centralized training and decentralized execution paradigm and during centralized training, one key challenge is the multiagent credit assignment: how to allocate the global rewards for individual agent policies for better coordination towards maximizing system-level's benefits. In this paper, we propose a new method called Q-value Path Decomposition (QPD) to decompose the system's global Q-values into individual agents' Q-values. Unlike previous works which restrict the representation relation of the individual Q-values and the global one, we leverage the integrated gradient attribution technique into deep MARL to directly decompose global Q-values along trajectory paths to assign credits for agents. We evaluate QPD on the challenging StarCraft II micromanagement tasks and show that QPD achieves the state-of-the-art performance in both homogeneous and heterogeneous multiagent scenarios compared with existing cooperative MARL algorithms.
+
+
+6336
+NGBoost: Natural Gradient Boosting for Probabilistic Prediction
+Tony Duan , Anand Avati , Daisy Ding , Khanh K. Thai , Sanjay Basu , Andrew Ng , Alejandro Schuler
+We present Natural Gradient Boosting (NGBoost), an algorithm for generic probabilistic prediction via gradient boosting. Typical regression models return a point estimate, conditional on covariates, but probabilistic regression models output a full probability distribution over the outcome space, conditional on the covariates. This allows for predictive uncertainty estimation - crucial in applications like healthcare and weather forecasting. NGBoost generalizes gradient boosting to probabilistic regression by treating the parameters of the conditional distribution as targets for a multiparameter boosting algorithm. Furthermore, we show how the Natural Gradient is required to correct the training dynamics of our multiparameter boosting approach. NGBoost can be used with any base learner, any family of distributions with continuous parameters, and any scoring rule. NGBoost matches or exceeds the performance of existing methods for probabilistic prediction while offering additional benefits in flexibility, scalability, and usability. An open-source implementation is available at github.com/stanfordmlgroup/ngboost.
+
+
+6654
+Causal Strategic Linear Regression
+Yonadav Shavit , Benjamin Edelman , Brian Axelrod
+In many predictive decision-making scenarios, such as credit scoring and academic testing, a decision-maker must construct a model that accounts for agents' incentives to ``game'' by changing their features to receive better decisions. Whereas the strategic classification literature has previously assumed that agents' outcomes are not causally dependent on their features (and thus strategic behavior is a form of lying), we join concurrent work in modeling agents' outcomes as a function of their changeable attributes. Our work introduces the realizable linear regression setting, and is the first to incorporate a crucial phenomenon: when agents act to change observable features, they may as a side effect perturb hidden features that causally affect their true outcomes. As our main contribution, we provide the efficient algorithms for optimizing three distinct decision-making objectives: accurately predicting agents' post-gaming outcomes (prediction risk minimization), incentivizing agents to improve these outcomes (agent outcome maximization), and estimating the coefficients of the true underlying model (parameter estimation). 
+Our algorithms circumvent the hardness result of Miller et al. (2020) by allowing the decision maker to test a sequence of decision rules and observe agents' responses, in effect performing causal interventions by varying the chosen rule.
+
+
+6661
+Mutual Transfer Learning for Massive Data
+Ching-Wei Cheng , Xingye Qiao , Guang Cheng
+In the transfer learning problem, the target and the source data domains are typically known. In this article, we study a new paradigm called mutual transfer learning where among many heterogeneous data domains, every data domain could potentially be the target of interest, and it could also be a useful source to help the learning in other data domains. However, it is important to note that given a target not every data domain can be a successful source; only data sets that are similar enough to be thought as from the same population can be useful sources for each other. Under this mutual learnability assumption, a confidence distribution fusion approach is proposed to recover the mutual learnability relation in the transfer learning regime. Our proposed method achieves the same oracle statistical inferential accuracy as if the true learnability structure were known. It can be implemented in an efficient parallel fashion to deal with large-scale data. Simulated and real examples are analyzed to illustrate the usefulness of the proposed method.
+
+
+6715
+Amortized Population Gibbs Samplers with Neural Sufficient Statistics
+Hao Wu , Heiko Zimmermann , Eli Sennesh , Tuan Anh Le , Jan-Willem van de Meent
+We develop amortized population Gibbs (APG) samplers, a class of scalable methods that frame structured variational inference as adaptive importance sampling. APG samplers construct high-dimensional proposals by iterating over updates to lower-dimensional blocks of variables. We train each conditional proposal by minimizing the inclusive KL divergence with respect to the conditional posterior. To appropriately account for the size of the input data, we develop a new parameterization in terms of neural sufficient statistics. Experiments show that APG samplers can be used to train highly-structured deep generative models in an unsupervised manner, and achieve substantial improvements in inference accuracy relative to standard autoencoding variational methods.
+
+
+5983
+Full Law Identification in Graphical Models of Missing Data: Completeness Results
+Razieh Nabi , Rohit Bhattacharya , Ilya Shpitser
+Missing data has the potential to affect analyses conducted in all fields of scientific study including healthcare, economics, and the social sciences. Several approaches to unbiased inference in the presence of non-ignorable missingness rely on the specification of the target distribution and its missingness process as a probability distribution that factorizes with respect to a directed acyclic graph. In this paper, we address the longstanding question of the characterization of models that are identifiable within this class of missing data distributions. We provide the first completeness result in this field of study -- necessary and sufficient graphical conditions under which, the full data distribution can be recovered from the observed data distribution. We then simultaneously address issues that may arise due to the presence of both missing data and unmeasured confounding, by extending these graphical conditions and proofs of completeness, to settings where some variables are not just missing, but completely unobserved.
+
+
+6152
+Private Reinforcement Learning with PAC and Regret Guarantees
+Giuseppe Vietri , Borja de Balle Pigem , Akshay Krishnamurthy , Steven Wu
+Motivated by high-stakes decision-making domains like personalized
+medicine where user information is inherently sensitive, we design
+privacy preserving exploration policies for episodic reinforcement
+learning (RL). We first provide a meaningful privacy formulation using
+the notion of joint differential privacy (JDP)--a strong variant of
+differential privacy for settings where each user receives their own
+sets of output (e.g., policy recommendations). We then develop a
+private optimism-based learning algorithm that simultaneously achieves
+strong PAC and regret bounds, and enjoys a JDP guarantee. Our
+algorithm only pays for a moderate privacy cost on exploration: in
+comparison to the non-private bounds, the privacy parameter only
+appears in lower-order terms.  Finally, we present lower bounds on
+sample complexity and regret for reinforcement learning subject to
+JDP.
+
+
+6319
+Safe Deep Semi-Supervised Learning for Unseen-Class Unlabeled Data
+Lan-Zhe Guo , Zhen-Yu Zhang , Yuan Jiang , Yufeng Li , Zhi-Hua Zhou
+	Deep semi-supervised learning (SSL) has been recently shown very effectively. However, its performance is seriously decreased when the class distribution is mismatched, among which a common situation is that unlabeled data contains some classes not seen in the labeled data. Efforts on this issue remain to be limited. This paper proposes a simple and effective safe deep SSL method to alleviate the harm caused by it. In theory, the result learned from the new method is never worse than learning from merely labeled data, and it is theoretically guaranteed that its generalization approaches the optimal in the order $O(\sqrt{d\ln(n)/n})$, even faster than the convergence rate in supervised learning associated with massive parameters. In the experiment of benchmark data, unlike the existing deep SSL methods which are no longer as good as supervised learning in 40\% of unseen-class unlabeled data, the new method can still achieve performance gain in more than 60\% of unseen-class unlabeled data. Moreover, the proposal is suitable for many deep SSL algorithms and can be easily extended to handle other cases of class distribution mismatch.
+
+6665
+The Buckley-Osthus model and the block preferential attachment model: statistical analysis and application
+Wenpin Tang , Xin Guo , Fengmin Tang
+This paper is concerned with statistical estimation of two preferential attachment models: the Buckley-Osthus model and the block preferential attachment model. We prove that the maximum likelihood estimates for both models are consistent. We perform simulation studies to corroborate our theoretical findings. We also apply both models to study the evolution of a real-world network. A list of open problems are presented.
+
+
+6679
+Improving the Gating Mechanism of Recurrent Neural Networks
+Albert Gu , Caglar Gulcehre , Thomas Paine , Matthew Hoffman , Razvan Pascanu
+Gating mechanisms are widely used in neural network models, where they allow gradients to backpropagate easily through depth or time. However, their saturation property introduces problems of its own. For example, in recurrent models these gates need to have outputs near 1 to propagate information over long time-delays, which requires them to operate in their saturation regime and hinders gradient-based learning of the gate mechanism. We address this problem by deriving two synergistic modifications to the standard gating mechanism that are easy to implement, introduce no additional hyperparameters, and improve learnability of the gates when they are close to saturation. We show how these changes are related to and improve on alternative recently proposed gating mechanisms such as chrono-initialization and Ordered Neurons. Empirically, our simple gating mechanisms robustly improve the performance of recurrent models on a range of applications, including synthetic memorization tasks, sequential image classification, language modeling, and reinforcement learning, particularly when long-term dependencies are involved.
+
+
+6327
+Randomized Smoothing of All Shapes and Sizes
+Greg Yang , Tony Duan , J. Edward Hu , Hadi Salman , Ilya Razenshteyn , Jerry Li
+Randomized smoothing is the current state-of-the-art defense with provable robustness against $\ell_2$ adversarial attacks. Many works have devised new randomized smoothing schemes for other metrics, such as $\ell_1$ or $\ell_\infty$; however, substantial effort was needed to derive such new guarantees. This begs the question: can we find a general theory for randomized smoothing?
+
+We propose a novel framework for devising and analyzing randomized smoothing schemes, and validate its effectiveness in practice. Our theoretical contributions are: (1) we show that for an appropriate notion of "optimal", the optimal smoothing distributions for any "nice" norms have level sets given by the norm's *Wulff Crystal*; (2) we propose two novel and complementary methods for deriving provably robust radii for any smoothing distribution; and, (3) we show fundamental limits to current randomized smoothing techniques via the theory of *Banach space cotypes*. By combining (1) and (2), we significantly improve the state-of-the-art certified accuracy in $\ell_1$ on standard datasets. Meanwhile, we show using (3) that with only label statistics under random input perturbations, randomized smoothing cannot achieve nontrivial certified accuracy against perturbations of $\ell_p$-norm $\Omega(\min(1, d^{\frac{1}{p} - \frac{1}{2}}))$, when the input dimension $d$ is large. We provide code in github.com/tonyduan/rs4a.
+
+6706
+Two Routes to Scalable Credit Assignment without Weight Symmetry
+Daniel Kunin , Aran Nayebi , Javier Sagastuy-Brena , Surya Ganguli , Jonathan Bloom , Daniel Yamins
+The neural plausibility of backpropagation has long been disputed, primarily for its use of non-local weight transport --- the biologically dubious requirement that one neuron instantaneously measure the synaptic weights of another. Until recently, attempts to create local learning rules that avoid weight transport have typically failed in the large-scale learning scenarios where backpropagation shines, e.g. ImageNet categorization with deep convolutional networks. Here, we investigate a recently proposed local learning rule that yields competitive performance with backpropagation and find that it is highly sensitive to metaparameter choices, requiring laborious tuning that does not transfer across network architecture. Our analysis indicates the underlying mathematical reason for this instability, allowing us to identify a more robust local learning rule that better transfers without metaparameter tuning. Nonetheless, we find a performance and stability gap between this local rule and backpropagation that widens with increasing model depth. We then investigate several non-local learning rules that relax the need for instantaneous weight transport into a more biologically-plausible "weight estimation" process, showing that these rules match state-of-the-art performance on deep networks and operate effectively in the presence of noisy updates. Taken together, our results suggest two routes towards the discovery of neural implementations for credit assignment without weight symmetry: further improvement of local rules so that they perform consistently across architectures and the identification of biological implementations for non-local learning mechanisms.
+
+
+6326
+Searching to Exploit Memorization Effect in Learning with Noisy Labels
+QUANMING YAO , Hansi Yang , Bo Han , Gang Niu , James Kwok
+Sample selection approaches are popular in robust learning from noisy labels. However, how to properly control the selection process so that deep networks can benefit from the memorization effect is a hard problem. In this paper, motivated by the success of automated machine learning (AutoML), we model this issue as a function approximation problem. 
+Specifically, we design a domain-specific search space based on general patterns of the memorization effect and propose a novel Newton algorithm to solve the bi-level optimization problem efficiently.  We further provide a theoretical analysis of the algorithm, which ensures a good approximation to critical points. Experiments are performed on both benchmark and real-world data sets. Results demonstrate that the proposed method is much better than the state-of-the-art noisy-label-learning approaches, and also much more efficient than existing AutoML algorithms.
+
+
+6704
+On Variational Learning of Controllable Representations for Text without Supervision
+Peng Xu , Jackie Chi Kit Cheung , Yanshuai Cao
+The variational autoencoder (VAE) can learn the manifold of natural images on certain datasets, as evidenced by meaningful interpolating or extrapolating in the continuous latent space. However, on discrete data such as text, it is unclear if unsupervised learning can discover similar latent space that allows controllable manipulation. In this work, we find that sequence VAEs trained on text fail to properly decode when the latent codes are manipulated, because the modified codes often land in holes or vacant regions in the aggregated posterior latent space, where the decoding network fails to generalize. Both as a validation of the explanation and as a fix to the problem, we propose to constrain the posterior mean to a learned probability simplex, and performs manipulation within this simplex. Our proposed method mitigates the latent vacancy problem and achieves the first success in unsupervised learning of controllable representations for text. Empirically, our method outperforms unsupervised baselines and strong supervised approaches on text style transfer. On automatic evaluation metrics used in text style transfer, even with the decoding network trained from scratch, our method achieves comparable results with state-of-the-art supervised approaches leveraging large-scale pre-trained models for generation. Furthermore, it is capable of performing more flexible fine-grained control over text generation than existing methods.
+
+
+5979
+Min-Max Optimization without Gradients: Convergence and Applications to Black-Box Evasion and Poisoning Attacks
+Sijia Liu , Songtao Lu , Xiangyi Chen , Yao Feng , Kaidi Xu , Abdullah Al-Dujaili , Mingyi Hong , Una-May O'Reilly
+In this paper, we study the problem of constrained min-max optimization in a black-box setting, where the desired optimizer cannot access the gradients of the objective function but may query its values. We present a principled optimization framework, integrating a zeroth-order (ZO) gradient estimator with an alternating projected stochastic gradient descent-ascent method, where the former only requires a small number of function queries and the later needs just one-step descent/ascent update. We show that the proposed framework, referred to as ZO-Min-Max, has a sublinear convergence rate under mild conditions and scales gracefully with problem size. We also explore a promising connection between black-box min-max optimization and black-box evasion and poisoning attacks in adversarial machine learning (ML). Our empirical evaluations on these use cases demonstrate the effectiveness of our approach and its scalability to dimensions that prohibit using recent black-box solvers.
+
+
+5802
+Loss Function Search for Face Recognition
+Xiaobo Wang , Shuo Wang , Cheng Chi , Shifeng Zhang , Tao Mei
+In face recognition, designing margin-based (\textit{e.g.}, angular, additive, additive angular margins) softmax loss functions plays an important role to learn discriminative features. However, these hand-crafted heuristic methods may be sub-optimal because they require much effort to explore the large design space. Recently, an AutoML for loss function search method AM-LFS has been derived, which leverages reinforcement learning to search loss functions during the training process. But its search space is complex and unstable that hindering its superiority. In this paper, we first analyze that the key to enhance the feature discrimination is actually \textbf{how to reduce the softmax probability}. We then design a unified formulation for the current margin-based softmax losses. Accordingly, we define a novel search space and develop a reward-guided search method to automatically obtain the best candidate. Experimental results on a variety of face recognition benchmarks have demonstrated the effectiveness of our method over the state-of-the-art alternatives.
+
+
+5765
+Reverse-engineering deep ReLU networks
+David Rolnick , Konrad Kording
+The output of a neural network depends on its architecture and weights in a highly nonlinear way, and it is often assumed that a network's parameters cannot be recovered from its output. Here, we prove that, in fact, it is frequently possible to reconstruct the architecture, weights, and biases of a deep ReLU network by observing only its output. We leverage the fact that every ReLU network defines a piecewise linear function, where the boundaries between linear regions correspond to inputs for which some neuron in the network switches between inactive and active ReLU states. By dissecting the set of region boundaries into components associated with particular neurons, we show both theoretically and empirically that it is possible to recover the weights of neurons and their arrangement within the network, up to isomorphism.
+
+
+5966
+Towards Understanding the Dynamics of the First-Order Adversaries
+Zhun Deng , Hangfeng He , Jiaoyang Huang , Weijie Su
+An acknowledged weakness of neural networks is their vulnerability to adversarial perturbations to the inputs. To improve the robustness of these models, one of the most popular defense mechanisms is to alternatively maximize the loss over the constrained perturbations (or called adversaries) on the inputs using projected gradient ascent and minimize over weights. In this paper, we analyze the dynamics of the maximization step towards understanding the experimentally observed effectiveness of this defense mechanism. Specifically, we investigate the landscape of the adversaries for a two-layer neural network with a quadratic loss. Our main result proves that projected gradient ascent finds a local maximum of this non-concave problem in a polynomial number of iterations with high probability.  To our knowledge, this is the first work that provides a convergence analysis of the first-order adversaries. Moreover, our analysis demonstrates that, in the initial phase of adversarial training, the scale of the inputs matters in the sense that a smaller input scale leads to faster convergence of adversarial training and a ``more regular'' landscape. Finally, we show that these theoretical findings are in excellent agreement with a series of experiments.
+
+
+6125
