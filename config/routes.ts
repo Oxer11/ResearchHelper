@@ -17,9 +17,34 @@
   },
   {
     path: '/welcome',
+    authority: ['admin', 'user'],
     name: 'welcome',
-    icon: 'smile',
+    icon: 'home',
     component: './Welcome',
+  },
+  {
+    path: '/papers',
+    name: 'Papers',
+    icon: 'filePdf',
+    component: './Papers',
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    icon: 'appstore',
+    component: './Projects',
+  },
+  {
+    path: '/materials',
+    name: 'Materials',
+    icon: 'read',
+    component: './Materials',
+  },
+  {
+    path: '/todo',
+    name: 'TODO',
+    icon: 'carryOut',
+    component: './TODO',
   },
   {
     path: '/admin',
